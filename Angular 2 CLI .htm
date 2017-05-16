@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://epicenter.epicodus.com/courses/149/code_reviews/743 -->
+<html data-ember-extension="1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./Angular 2 CLI _files/8a5eeabe04"></script><script src="./Angular 2 CLI _files/nr-1026.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"8a5eeabe04","applicationID":"4335657","transactionName":"elpYRhZXXl5WSh5QDV1QaUABTltXREseQApWQg==","queueTime":5,"applicationTime":49,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<title>Epicenter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" media="all" href="./Angular 2 CLI _files/application-16c276c649533ce94c30a921a6532270b4a7face4e40889fe7b9927749a26766.css">
+<link rel="shortcut icon" type="image/x-icon" href="https://epicenter.epicodus.com/assets/favicon-d0e8ff63da72a0c5ea15ebc045a7f9d2979d211a12e596a5ed5f5b1534e78919.png">
+<link href="./Angular 2 CLI _files/css" rel="stylesheet" type="text/css">
+<script src="./Angular 2 CLI _files/saved_resource"></script>
+<script src="./Angular 2 CLI _files/jsapi"></script>
+<script src="./Angular 2 CLI _files/application-7a9007f4587bf8d5afde51a46c026c58703ff012a315642c041d052181e58edd.js"></script>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="4y8V+2GJaOhk6fV1+mONccM+NYNuXMb5n9ahgVriFwtFxsJel4zVWKd+4Mtr01NxUJ6KOV6RT0XzDSPku625zg==">
+</head>
+<body>
+<div class="container">
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div id="navbar" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li>
+<a class="first-navbar-link" href="https://epicenter.epicodus.com/students/1708/courses">Courses</a>
+</li>
+<li>
+<a href="https://epicenter.epicodus.com/students/1708/payments">Payments</a>
+</li>
+<li>
+<a href="https://epicenter.epicodus.com/payment_methods">Payment methods</a>
+</li>
+<li>
+<a href="https://epicenter.epicodus.com/random_pairs">Pair suggestions</a>
+</li>
+<li>
+<a href="https://epicenter.epicodus.com/student/edit">Profile</a>
+</li> </ul>
+<ul class="nav navbar-nav non-mobile-pull-right">
+<li><a data-method="delete" href="https://epicenter.epicodus.com/student/sign_out">Sign out</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div>
+</div>
+<div class="alert alert-warning">
+Your submission is pending review.
+</div>
+<h1>
+Angular Extended
+</h1>
+<h4>Submitted 2 times</h4>
+<div class="panel panel-default">
+<div class="panel-body">
+<div class="table-responsive">
+<table class="table">
+<thead>
+<tr><th>Objectives</th></tr>
+</thead>
+<tbody>
+<tr><td><p>Components are used to create display and behavior for templates.</p>
+</td></tr>
+<tr><td><p>A router is used to navigate between different pages, including at least one dynamic route. </p>
+</td></tr>
+<tr><td><p>A service shares data between multiple components.</p>
+</td></tr>
+<tr><td><p>Application can create, edit, and delete instances of a model, persisting all changes in Firebase. </p>
+</td></tr>
+<tr><td><p>Data is retrieved from Firebase and displayed in the application. </p>
+</td></tr>
+<tr><td><p>Models can be filtered using a custom pipe. </p>
+</td></tr>
+<tr><td><p>Project demonstrates understanding of week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.</p>
+</td></tr>
+<tr><td><p>Project is in a polished, portfolio-quality state.</p>
+</td></tr>
+<tr><td><p>Required functionality was in place by the Friday deadline.</p>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4><strong>Project</strong></h4>
+</div>
+<div class="panel-body">
+<h2>Project</h2>
+<hr>
+<h3>Club Manager</h3>
+<p>Create a website that manages the roster of a club, team, or group. This could be anything from an intramural sports league, paint night, book club, pokemon collectors, AA or NA meetup, skateboard crew, hiking group, tribal activity, extracurricular course, basset hound aficionados, activist group, or hack-a-thon team. The choice is yours. Take some time to consider the activities you, your family, or friend group do regularly, and what kind of a site would be beneficial to you or someone you care about.</p>
+<p>Here are some user stories to get you started: </p>
+<ul>
+<li>As a user, I'd like to visit a page to see a list of all team or club members. </li>
+<li>As a user, I'd like to click a team or club member's entry in the list to visit their profile page, which should include more details about them.</li>
+<li>As a user, I'd like the option to visit an "About" page that explains what the club is, and what they do.</li>
+<li>As a user, I'd like all data persisted in a database, so it's always there when I need it.</li>
+<li>As a user, I'd like to filter the list of users by their particular role in the group, or some other information/category. (For instance, a club may have a treasurer, president, and/or secretary. A sports team may have a goalie, forward, or striker, a book club may have founders and attendees. You're also welcome to filter by something <em>other</em> than <code class="prettyprint">role</code>, if it's more relevant to your project.) </li>
+<li>As an administrator, I want to add new users to the club. (User authentication is not required). </li>
+<li>As an administrator, I want to edit user profiles, in case I make a mistake, or need to update their details.</li>
+<li>As an administrator, need the option to delete a user, in case they leave the club or team.</li>
+</ul>
+<h2>Further Exploration</h2>
+<hr>
+<p>If you're able to complete the project with time to spare, implement additional features such as: </p>
+<ul>
+<li>Add functionality to keep track of stats, if relevant. Is your roster for a sports club? Keep track of the individual players' scoring percentage. An extracurricular course or seminar? Keep track of attendance or grades. A hiking group? Keep track of the number of miles each person has hiked with the club, etc. </li>
+<li>Add a message board area, where club members may chat with each other. </li>
+<li>Include an area called "announcements", "events", "games", etc. where users can post what events, matches, or meetings the club has planned. </li>
+<li>Deploy your application. Include a link to the live site in your project's README. </li>
+<li>Consider implementing AngularFire/Firebase user authentication (Note that this goes beyond the scope of our curriculum, and will require you to complete outside research. Begin with the <a href="https://github.com/angular/angularfire2/blob/master/docs/5-user-authentication.md">AngularFire documentation on User Authentication</a>.) </li>
+<li>Anything else that would be relevant to the group <em>your</em> application manages! </li>
+</ul>
+</div>
+<div class="panel-footer">
+<p>Submit your code for review by 5pm on Friday May 12.</p>
+<p>Visit <a href="https://www.learnhowtoprogram.com/lessons/independent-projects-and-code-reviews" target="_blank">Independent Projects and Code Reviews</a> for details on how to submit, how feedback works and course completion requirements.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<form class="edit_submission" id="edit_submission_15742" action="https://epicenter.epicodus.com/code_reviews/743/submissions/15742" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="4y8V+2GJaOhk6fV1+mONccM+NYNuXMb5n9ahgVriFwtFxsJel4zVWKd+4Mtr01NxUJ6KOV6RT0XzDSPku625zg==">
+<input value="true" type="hidden" name="submission[needs_review]" id="submission_needs_review">
+<input value="1708" type="hidden" name="submission[student_id]" id="submission_student_id">
+<div class="form-group">
+<label for="submission_link">Submission link</label>
+<input class="form-control" placeholder="http://github.com/your-username/your-repository" type="text" value="https://github.com/warnock/pnw-hiker-group.git" name="submission[link]" id="submission_link">
+</div>
+<div class="form-group">
+<p>
+I confirm that I have read and understand the <a href="https://www.learnhowtoprogram.com/lessons/independent-projects-and-code-reviews" target="_blank">guidelines</a> for Independent Projects.
+&nbsp;&nbsp;<input type="checkbox" id="understand-guidelines" value="1" required="required">
+</p>
+<p>&nbsp;</p>
+</div>
+<input type="submit" name="commit" value="Resubmit" class="btn btn-info">
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<iframe name="stripeXDM_default634234_provider" id="stripeXDM_default634234_provider" src="./Angular 2 CLI _files/channel.html" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe></body></html>
